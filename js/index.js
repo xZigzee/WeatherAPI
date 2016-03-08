@@ -1,5 +1,5 @@
 var feedURL = "https://www.metaweather.com/api/location/44418/";
-
+			
 $(document).on('pagecreate', '#feedPage', function(event) {
 	
 	alert("pagecreated");
@@ -7,7 +7,7 @@ $(document).on('pagecreate', '#feedPage', function(event) {
 	<!-- Use an HTML GET request to obtain data from a Yahoo Pipe
 	<!-- The Yahoo pipe currently parses the BBC News RSS feed  -->
 	var xmlhttp=new XMLHttpRequest();
-	xmlhttp.open("GET", feedURL, false);
+	xmlhttp.open("GET", feedURL, true);
 	xmlhttp.send();
 		
 		
