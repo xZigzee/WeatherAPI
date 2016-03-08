@@ -2,6 +2,7 @@ var feedURL = "https://www.metaweather.com/api/location/44418/";
 
 $(document).on('pagecreate', '#feedPage', function(event) {
 	
+	alert("pagecreated");
 	
 	<!-- Use an HTML GET request to obtain data from a Yahoo Pipe
 	<!-- The Yahoo pipe currently parses the BBC News RSS feed  -->
@@ -9,6 +10,8 @@ $(document).on('pagecreate', '#feedPage', function(event) {
 	xmlhttp.open("GET", feedURL, false);
 	xmlhttp.send();
 		
+		
+	alert("response = " + xmlhttp.responseText);
 		
 	<!-- parse the resulting JSON into Javascript Data Object -->
 	<!-- you can use a live parser to inspect the contents of the JSON
