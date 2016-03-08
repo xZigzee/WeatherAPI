@@ -19,7 +19,12 @@
 	
 	<!-- add plugins required for OAuth.io -->
 	
+	<plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" />
+	
 	<!-- give access to all domains in the outside world -->
-	<access origin="*" />
+
+	<access origin="*"/> <!-- allow local pages -->
+    	<allow-navigation href="*" />
+    	<allow-intent href="*" />
 
 </widget>
