@@ -18,6 +18,8 @@ $(document).on('pagecreate', '#feedPage', function(event) {
 	<!-- http://json.parser.online.fr/ -->
 	var weather= JSON.parse(xmlhttp.responseText);
 	
+	alert("response = " + weather);
+	
 	
 	<!-- Define Ractive binding -->
 	var ractive = new Ractive({
